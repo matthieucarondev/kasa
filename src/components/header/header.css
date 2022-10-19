@@ -1,0 +1,40 @@
+.header {
+margin:  40px 100px 63px 100px ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+}
+header a img {
+  /* width: 17%; */
+  height: 68px;
+}
+header nav {
+     display: flex;
+ flex-direction: row;
+}
+header nav a {
+  margin-right: 60px;
+  font-size: 24px;
+  color: #ff6060;
+}
+
+header nav a:hover,
+header nav a:active {
+  /* line-height: 34px; */
+  border-bottom: 1px solid #ff6060;
+}
+@media all and (max-width: 750px) {
+    .header {
+margin:  20px 20px 16px 20px ;
+    }
+    header a img {
+        width: 100%;
+min-height: 47px;
+    }
+    header nav a {
+  margin-right: 31px;
+  font-size: 16px;
+    }
+}
