@@ -1,5 +1,4 @@
 import logoFooter from '../../asset/logofooter.png'
-import reserved from '../../asset/KasaReserved.png'
 import React from 'react'
 import './footer.css'
 
