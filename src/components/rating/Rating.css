@@ -1,0 +1,24 @@
+
+.lodgingRating{
+    display: flex;
+       flex-direction: row;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.lodgingRating img{
+    transform: scale(.7);
+    width: 30px;
+    height: 30px;
+}
+@media (max-width: 768px) {
+      .lodgingRating{
+        margin-left: inherit;
+    }
+
+    .lodgingRating img{
+        transform: scale(.8);
+        width: 1.2rem;
+    }
+
+}

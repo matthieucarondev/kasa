@@ -1,14 +1,17 @@
-import React from 'react'
-import Header from '../../components/header/header'
-import Footer from '../../components/footer/footer'
+import React , { useEffect}from 'react'
+// import Header from '../../components/header/header'
+// import Footer from '../../components/footer/footer'
 import Banner from '../../components/banner/banner'
 function about() {
+   useEffect(()=>{
+    document.title = "kasa- À propos"
+  })
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
        <Banner page="about" />
  
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

@@ -26,21 +26,23 @@ function wheel({ pictures }) {
   return (
     <div className="kasa-wheel">
       {PicturesNumber > 1 && (
+        <>
         <img
           className="arrow arrow-left"
           src={ArrowLeft}
           alt="arrow left"
           onClick={previewPicture}
         />
-      )}
-      {PicturesNumber > 1 && (
+    
+     
         <img
           className="arrow arrow-right"
           src={ArrowRight}
           alt="arrow right"
           onClick={nextPicture}
         />
-      )}
+        </>
+       )}
       {pictures.map((picture, index) =>
         index === pictureDisplayed ? (
           <div>
