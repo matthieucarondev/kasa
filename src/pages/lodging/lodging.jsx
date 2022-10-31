@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import Wheel from '../../components/wheel/wheel'
-import Tag from '../../components/tag/tag'
-import Host from '../../components/host/Host'
-import Rating from '../../components/rating/rating'
-import Error from '../error/error'
-import datas from '../../data/data.json'
-import './lodging.css'
+import Wheel from '../../components/Wheel/Wheel'
+import Tag from '../../components/Tag/Tag'
+import Host from '../../components/Host/Host'
+import Rating from '../../components/Rating/Rating'
+import Error from '../Error/Error'
+import datas from '../../Data/Data.json'
+import './Lodging.css'
 
 function Lodging() {
   useEffect(() => {

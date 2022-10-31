@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ArrowLeft from '../../asset/ArrowLeft.png'
 import ArrowRight from '../../asset/ArrowRight.png'
-import './wheel.css'
+import './Wheel.css'
 
 
 function wheel({ pictures }) {

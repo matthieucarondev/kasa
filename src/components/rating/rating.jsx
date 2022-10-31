@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import GreyStar from '../../asset/star.png'
 import RedStar from '../../asset/fullStar.png'
-import datas from '../../data/data.json'
+import Datas from '../../Data/Data.json'
 import './Rating.css'
 
-function Star(datas) {
-  let lodgingRating = datas.rating
+function Star(Datas) {
+  let lodgingRating = Datas.rating
   let lodgingNegRating = 5 - lodgingRating
   const greyStars = () => {
     let greyStarsArray = []

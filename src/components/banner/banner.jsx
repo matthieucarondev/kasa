@@ -1,10 +1,10 @@
   import React from 'react'
   import bannerHome from '../../asset/imgBanner.jpg'
   import bannerAbout from '../../asset/about.png'
-  import './banner.css'
+  import './Banner.css'
   
   
-function banner({ page }) {
+function Banner({ page }) {
   return page === 'home' ? (
     <div className="bannerHome">
       <img className="bannerImg" src={bannerHome} alt="bannière" />
@@ -18,4 +18,4 @@ function banner({ page }) {
   )
   
   }
-export default banner
+export default Banner
