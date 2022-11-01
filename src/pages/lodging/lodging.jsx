@@ -5,7 +5,7 @@ import Tag from '../../components/tag/Tag'
 import Host from '../../components/host/Host'
 import Rating from '../../components/rating/Rating'
 import Error from '../error/Error'
-// import DropDown from '../../components/dropdown/Dropdown'
+import DropDown from '../../components/dropdown/Dropdown'
 import datas from '../../data/Data.json'
 import './Lodging.css'
 
@@ -16,11 +16,9 @@ function Lodging() {
   const { id } = useParams()
   // le formulaire d'hébergement à partir de la base de données
   const lodgingSearched = datas.find((lodging) => lodging.id === id)
-  //   const equipments = lodgingSearched?.equipments.map(
-  //   (equipment, index) => {
-  //     return <li key={index}>{equipment}</li>
-  //   }
-  // )
+    
+  
+
   return lodgingSearched === undefined ? (
     <Error />
   ) : (
@@ -36,14 +34,12 @@ function Lodging() {
           <div className="hr">
             <Host host={lodgingSearched.host} />
 							 <Rating rating = {lodgingSearched.rating} />
-          </div>      {/* <div className="accomodation-details">
-        <DropDown
-          title={"Description"}
-          description={lodgingSearched?.description}
-        />
-        <DropDown title={"Equipements"} description={equipments} />
+          </div>     
+        <div className="dropdownLodging">
+        <DropDown title="Description" text={lodgingSearched.description} />
+        <DropDown title="Équipements" text={lodgingSearched.equipments} />
       </div>
-      */}
+     
         </div>
        </article>
     </section>

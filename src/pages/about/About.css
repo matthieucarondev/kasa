@@ -1,18 +1,6 @@
-.about-dropdown {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: auto;
-    position: relative;
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-top: 50px;
-}
 
+.dropdown{
+    padding: 0 208px;
+}
 @media screen and (max-width: 718px) {
-    .about-dropdown {
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 50px;
-    }
 }

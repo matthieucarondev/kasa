@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
 // import Header from '../../components/header/header'
 // import Footer from '../../components/footer/footer'
-// import DropDown from '../../components/dropdown/Dropdown'
+import DropDown from '../../components/dropdown/Dropdown'
 import Banner from '../../components/banner/Banner'
+import './About.css'
 
 function about() {
   useEffect(() => {
@@ -12,7 +13,7 @@ function about() {
     <div>
       {/* <Header /> */}
       <Banner page="about" />
-      {/* <div className="about-dropdown">
+      <div className="about-dropdown">
         <DropDown
           title="Fiabilité"
           description="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
@@ -29,7 +30,7 @@ function about() {
           title="Responsabilité"
           description="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
         />
-      </div> */}
+      </div>
 
       {/* <Footer /> */}
     </div>

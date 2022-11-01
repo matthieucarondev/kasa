@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import GreyStar from '../../asset/star.png'
 import RedStar from '../../asset/fullStar.png'
-import datas from '../../data/Data.json'
+
 import './Rating.css'
 
-function Star(datas) {
+function Rating(datas) {
   let lodgingRating = datas.rating
   let lodgingNegRating = 5 - lodgingRating
   const greyStars = () => {
@@ -42,4 +42,4 @@ function Star(datas) {
     /* Available Props */
   )
 }
-export default Star
+export default Rating
