@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import Wheel from '../../components/Wheel/Wheel'
-import Tag from '../../components/Tag/Tag'
-import Host from '../../components/Host/Host'
-import Rating from '../../components/Rating/Rating'
-import Error from '../Error/Error'
-import datas from '../../Data/Data.json'
+import Wheel from '../../components/wheel/Wheel'
+import Tag from '../../components/tag/Tag'
+import Host from '../../components/host/Host'
+import Rating from '../../components/rating/Rating'
+import Error from '../error/Error'
+// import DropDown from '../../components/dropdown/Dropdown'
+import datas from '../../data/Data.json'
 import './Lodging.css'
 
 function Lodging() {
@@ -15,6 +16,11 @@ function Lodging() {
   const { id } = useParams()
   // le formulaire d'hébergement à partir de la base de données
   const lodgingSearched = datas.find((lodging) => lodging.id === id)
+  //   const equipments = lodgingSearched?.equipments.map(
+  //   (equipment, index) => {
+  //     return <li key={index}>{equipment}</li>
+  //   }
+  // )
   return lodgingSearched === undefined ? (
     <Error />
   ) : (
@@ -30,8 +36,14 @@ function Lodging() {
           <div className="hr">
             <Host host={lodgingSearched.host} />
 							 <Rating rating = {lodgingSearched.rating} />
-						
-          </div>
+          </div>      {/* <div className="accomodation-details">
+        <DropDown
+          title={"Description"}
+          description={lodgingSearched?.description}
+        />
+        <DropDown title={"Equipements"} description={equipments} />
+      </div>
+      */}
         </div>
        </article>
     </section>

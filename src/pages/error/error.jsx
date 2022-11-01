@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 
 // import Header from '../../components/header/header'
 // import Footer from '../../components/footer/footer'
-import Error from '../../components/Error/Error'
+import Error from '../../components/error/Error'
 
 
 function error() {

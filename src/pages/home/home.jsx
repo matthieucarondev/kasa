@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 // import Header from '../../components/header/header'
-import Banner from '../../components/Banner/Banner'
-import ListCard from '../../components/ListCard/ListCard'
+import Banner from '../../components/banner/Banner'
+import ListCard from '../../components/listCard/ListCard'
 // import Footer from '../../components/footer/footer'
 
 function Home() {

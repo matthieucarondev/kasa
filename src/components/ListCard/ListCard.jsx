@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Card from '../Card/Card'
-import datas from '../../data/data.json'
+import Card from '../card/Card'
+import datas from '../../data/Data.json'
 import './ListCard.css'
 
 function ListCard() {
