@@ -36,8 +36,8 @@ function Lodging() {
 							 <Rating rating = {lodgingSearched.rating} />
           </div>     
         <div className="dropdownLodging">
-        <DropDown title="Description" text={lodgingSearched.description} />
-        <DropDown title="Équipements" text={lodgingSearched.equipments} />
+        <DropDown className="dropdownLodging-description" title="Description" text={lodgingSearched.description} />
+        <DropDown className="dropdownLodging-Équipements" title="Équipements" text={lodgingSearched.equipments} />
       </div>
      
         </div>
