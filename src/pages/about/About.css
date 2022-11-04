@@ -1,6 +1,12 @@
 
-.dropdown{
+.about-dropdown{
     padding: 0 208px;
+     margin-bottom: 201px;
 }
-@media screen and (max-width: 718px) {
+@media (max-width: 740px) 
+{
+    .about-dropdown {
+       padding: 19px 0px; 
+      margin-bottom: 168px;
+    }
 }

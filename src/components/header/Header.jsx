@@ -10,8 +10,8 @@ function header() {
         <img src={logo} className="logo" alt="logo kasa" />
       </a>
       <nav>
-        <Link to="/">ACCUEIL</Link>
-        <Link to="/about">À PROPOS</Link>
+        <Link id='Accueil' to="/">ACCUEIL</Link>
+        <Link id='about' to="/about">À PROPOS</Link>
       </nav>
     </header>
   )

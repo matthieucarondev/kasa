@@ -3,7 +3,7 @@
     display: flex;
        flex-direction: row;
     align-items: center;
-    padding-bottom: 15px;
+ 
 }
 
 .lodgingRating img{
@@ -11,14 +11,12 @@
     width: 30px;
     height: 30px;
 }
-@media (max-width: 768px) {
-      .lodgingRating{
-        margin-left: inherit;
-    }
-
+@media (max-width: 740px) {
+ 
     .lodgingRating img{
         transform: scale(.8);
-        width: 1.2rem;
+        width: 15px;
+        height: 15px;
     }
 
 }

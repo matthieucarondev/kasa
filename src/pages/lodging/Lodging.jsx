@@ -17,15 +17,18 @@ function Lodging() {
   // le formulaire d'hébergement à partir de la base de données
   const lodgingSearched = datas.find((lodging) => lodging.id === id)
     
-  
-
-  return lodgingSearched === undefined ? (
-    <Error />
-  ) : (
-    <section>
-      <article className="kasa-lodging">
-        <div className="lodging-header">
+  const equipments = lodgingSearched.equipments.map(
+    (equipment, index) => {
+      return <li key={index}>{equipment}</li>
+    }
+  )
+  return lodgingSearched? (
+   
+      <section className="kasa-lodging">
+          <article className="lodging-header">
           <Wheel pictures={lodgingSearched.pictures} />
+          </article> 
+          <article className='lodging-information'>
           <div className="lodging-location">
             <h1>{lodgingSearched.title}</h1>
             <h2>{lodgingSearched.location}</h2>
@@ -34,15 +37,15 @@ function Lodging() {
           <div className="hr">
             <Host host={lodgingSearched.host} />
 							 <Rating rating = {lodgingSearched.rating} />
-          </div>     
-        <div className="dropdownLodging">
-        <DropDown className="dropdownLodging-description" title="Description" text={lodgingSearched.description} />
-        <DropDown className="dropdownLodging-Équipements" title="Équipements" text={lodgingSearched.equipments} />
-      </div>
-     
-        </div>
-       </article>
+          </div>  
+           </article> 
+        <article className="dropdownLodging">
+        <DropDown className="dropdownLodgingTag dropdownLodging-description" title={'Description'} description={lodgingSearched.description} />
+        <DropDown className="dropdownLodgingTag dropdownLodging-Équipements" title={'Équipements'} description={equipments} />
+        </article>
     </section>
+    ) : (
+       <Error />
   )
 }
 

@@ -1,29 +1,39 @@
 import React, { useState } from 'react'
 import './DropDown.css'
-import arrow from '../../asset/ArrowDown.png'
+import Arrow from '../../asset/ArrowDown.png'
 
-function Dropdown({ title, description }) {
-  /* Crée un Hook d'état */
-  const [ouvert, setOuvert] = useState(false)
 
-  return (
-    <div className="dropdown" id={`dropdown-${title}`}>
-      <div className="header-dropdown">
-        <div className="title-dropdown">{title}</div>
-        <a
-          className={`Arrow-dropdown ${ouvert}`}
-          href={`#dropdown-${title}`}
-          onClick={() => setOuvert(!ouvert)}
+
+
+function DropDown({ title, description }) {
+  const [isOpen, setIsOpen] = useState(false)
+
+  return isOpen ? (
+    <div className="kasa-dropdown" id={`dropdown-${title}`}>
+      <div className="dropdown-header">
+        <div className="dropdown-title">{title}</div>
+        <div
+          className={`dropdown-arrow ${isOpen}`}
+          onClick={() => setIsOpen(false)}
         >
-          <img src={arrow} alt="Ouvrir cette liste" />
-        </a>
+          <img src={Arrow} alt="dropdown open" />
+        </div>
       </div>
-      {
-        /* Si le dropdown est à TRUE alors il affichera la description */
-        ouvert && <div className="description-dropdown">{description}</div>
-      }
+      <div className="dropdown-description">{description}</div>
+    </div>
+  ) : (
+    <div className="kasa-dropdown" id={`dropdown-${title}`}>
+      <div className="dropdown-header">
+        <div className="dropdown-title">{title}</div>
+        <div
+          className={`dropdown-arrow ${isOpen}`}
+          onClick={() => setIsOpen(true)}
+        >
+          <img src={Arrow} alt="dropdown close" />
+        </div>
+      </div>
     </div>
   )
 }
 
-export default Dropdown
+export default DropDown

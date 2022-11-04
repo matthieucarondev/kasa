@@ -1,47 +1,81 @@
-.dropdown {
-  border-radius: 5px;
-  margin-bottom: 35px;
+.kasa-dropdown {
+  width: 100%;
+  max-width: 1023px;
+  height: auto;
+  border-radius: 10px;
   text-align: left;
-  
+  margin-top: 31px;
 }
 
-.header-dropdown {
+.large {
+  width: auto;
+}
+
+.dropdown-header {
+  display: inline-flex;
+  width: 100%;
+  height: 25%;
+  min-height: 50px;
   align-items: center;
   background-color: #ff6060;
-  border-radius: 5px;
-  display: inline-flex;
-  height: 25%;
-  max-height: 47px;
-  width: 100%;
+  border-radius: 10px;
 }
 
-.title-dropdown {
+.dropdown-title {
   color: #ffffff;
   height: 50px;
   line-height: 50px;
   margin: 5px 10px;
-  font-size: 24px;
-  font-weight: 500;
 }
 
-.Arrow-dropdown {
+.dropdown-arrow {
   display: flex;
   justify-content: flex-end;
   margin-right: 10px;
   width: 100%;
 }
-.Arrow-dropdown.true {
+
+.dropdown-arrow.true {
   justify-content: start;
   transform: rotate(-180deg);
 }
 
-.description-dropdown {
+.dropdown-arrow img {
+  width: 25px;
+}
+
+.dropdown-description {
+  height: auto;
+  min-height: 146px;
+  margin-top: -10px;
+  padding: 25px 10px 10px 10px;
   background-color: #f6f6f6;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   color: #ff6060;
-  height: 75%;
-  margin-top: -10px;
-  min-height: 100px;
-  padding: 25px 10px 10px 10px;
+}
+#dropdown-Description{
+  margin-right: 38px;
+}
+#dropdown-Équipements{
+  margin-left:38px ;
+}
+@media(max-width: 740px) {
+  .dropdown-arrow img {
+    width: 15px;
+  }
+  .kasa-dropdown{
+      margin-top: 20px;
+      width :100%;
+      min-width: 335px;
+  }
+  .dropdown-header{
+  height: 30px;
+  }
+  .dropdown-title{
+    font-size: 13px;
+  }
+  #dropdown-Équipements {
+    margin-left: 0px;
+}
 }
