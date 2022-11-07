@@ -9,6 +9,7 @@
   margin-bottom: 0;
   background-color: #000000;
   color: #ffffff;
+  margin: 0%;
  
 }
 
@@ -18,9 +19,9 @@
 
 
 @media (min-width: 740px) {
-  /* .footer {
-  
- } */
+  .footer {
+  width: 100%;
+ }
     .Reserved {
       font-size: 24px;
     }
