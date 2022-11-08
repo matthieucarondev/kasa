@@ -1,7 +1,6 @@
 import React from 'react'
 import GreyStar from '../../asset/star.png'
 import RedStar from '../../asset/fullStar.png'
-
 import './Rating.css'
 
 function Rating(datas) {
@@ -35,11 +34,10 @@ function Rating(datas) {
   }
 
   return (
-    <div className="lodgingRating">
+    <article className="lodgingRating">
       {redStars()}
       {greyStars()}
-    </div>
-    /* Available Props */
+    </article>
   )
 }
 export default Rating

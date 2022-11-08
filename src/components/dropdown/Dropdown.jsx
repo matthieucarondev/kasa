@@ -11,7 +11,7 @@ function DropDown({ title, description }) {
   return isOpen ? (
     <div className="kasa-dropdown" id={`dropdown-${title}`}>
       <div className="dropdown-header">
-        <div className="dropdown-title">{title}</div>
+        <h3 className="dropdown-title">{title}</h3>
         <div
           className={`dropdown-arrow ${isOpen}`}
           onClick={() => setIsOpen(false)}
@@ -24,7 +24,7 @@ function DropDown({ title, description }) {
   ) : (
     <div className="kasa-dropdown" id={`dropdown-${title}`}>
       <div className="dropdown-header">
-        <div className="dropdown-title">{title}</div>
+        <h4 className="dropdown-title">{title}</h4>
         <div
           className={`dropdown-arrow ${isOpen}`}
           onClick={() => setIsOpen(true)}

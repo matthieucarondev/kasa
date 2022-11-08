@@ -4,14 +4,14 @@ import './Host.css'
 
 const Host = ({ host }) => {
   return (
-    <article className="host">
+    <aside className="host">
       <p className="hostName">{host.name}</p>
       <img
         className="profilPictureHost"
         src={host.picture}
         alt="profilPictureHost"
       />
-    </article>
+    </aside>
   )
 }
 

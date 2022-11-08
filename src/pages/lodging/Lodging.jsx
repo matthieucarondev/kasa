@@ -29,15 +29,15 @@ function Lodging() {
           <Wheel pictures={lodgingSearched.pictures} />
           </article> 
           <article className='lodging-information'>
-          <div className="lodging-location">
+          <section className="lodging-location">
             <h1>{lodgingSearched.title}</h1>
             <h2>{lodgingSearched.location}</h2>
             <Tag tags={lodgingSearched.tags} />
-          </div>
-          <div className="hr">
+          </section>
+          <article className="hr">
             <Host host={lodgingSearched.host} />
 							 <Rating rating = {lodgingSearched.rating} />
-          </div>  
+          </article>  
            </article> 
         <article className="dropdownLodging">
         <DropDown className="dropdownLodgingTag dropdownLodging-description" title={'Description'} description={lodgingSearched.description} />

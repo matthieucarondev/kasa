@@ -1,7 +1,4 @@
 import React, {useEffect} from 'react'
-
-// import Header from '../../components/header/header'
-// import Footer from '../../components/footer/footer'
 import Error from '../../components/error/Error'
 
 
@@ -10,11 +7,9 @@ function error() {
     document.title = "kasa-erreur404"
   })
   return (
-    <div>
-      {/* <Header /> */}
+    <section>
       <Error/>
-      {/* <Footer /> */}
-    </div>
+    </section>
   )
 }
 

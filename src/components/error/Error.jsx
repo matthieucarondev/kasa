@@ -5,15 +5,15 @@ import './Error.css'
 
 function Error() {
     return(
-        <div className='errorHome'>
+        <article className='errorHome'>
             <p className='errorTitle'>404</p>
              <p className='errorText'>Oups! La page que vous demandez n'existe pas.</p>
-             <div className="LinkHome">
+        <article className="LinkHome">
         <Link className="link" to={'/'}>
             Retourner sur la page d’accueil
         </Link>
-        </div>
-        </div>
+        </article>
+        </article>
 
     )
 }

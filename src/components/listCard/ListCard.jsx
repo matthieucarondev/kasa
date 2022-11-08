@@ -6,16 +6,16 @@ import './ListCard.css'
 
 function ListCard() {
   return (
-    <div className="listCard">
+    <section className="listCard">
       {datas.map((lodging) => (
-        <Link key={lodging.id} to={'/lodging/'+lodging.id+'/#'}>
-        <Card key={lodging.id} 
-              id={lodging.id} 
-              img={lodging.cover} 
-              title={lodging.title} />
-              </Link>
+        <Card
+          key={lodging.id}
+          id={lodging.id}
+          img={lodging.cover}
+          title={lodging.title}
+        />
       ))}
-    </div>
+    </section>
   )
 }
 export default ListCard

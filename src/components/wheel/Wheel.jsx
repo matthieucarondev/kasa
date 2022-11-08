@@ -24,9 +24,9 @@ function wheel({ pictures }) {
     return updatePicture
   }
   return (
-    <div className="kasa-wheel">
+    <section className="kasa-wheel">
       {PicturesNumber > 1 && (
-        <div className='kasaArrow'>
+        <article className='kasaArrow'>
         <img
           className="arrow arrow-left"
           src={ArrowLeft}
@@ -41,11 +41,11 @@ function wheel({ pictures }) {
           alt="arrow right"
           onClick={nextPicture}
         />
-        </div>
+        </article>
        )}
       {pictures.map((picture, index) =>
         index === pictureDisplayed ? (
-          <div>
+          <article>
             <img
               key={index}
               className="wheel-image displayed"
@@ -55,7 +55,7 @@ function wheel({ pictures }) {
             <span key={`image-${index}`} className="picture-number">{`${
               index + 1
             }/${PicturesNumber}`}</span>
-          </div>
+          </article>
         ) : (
           <img
             key={index}
@@ -65,7 +65,7 @@ function wheel({ pictures }) {
           />
         )
       )}
-    </div>
+    </section>
   )
 }
 
