@@ -2,6 +2,8 @@
 .about-dropdown{
     padding: 0 208px;
      margin-bottom: 201px;
+        display: flex;
+    flex-direction: column;
 }
 @media (max-width: 740px) 
 {

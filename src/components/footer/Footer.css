@@ -14,16 +14,14 @@
 }
 
   .Reserved {
-    font-size: 12px;
+    font-size: 24px;
   }
 
 
-@media (min-width: 740px) {
-  .footer {
-  width: 100%;
- }
+@media (max-width: 740px) {
+ 
     .Reserved {
-      font-size: 24px;
+      font-size: 12px;
     }
 
 }
