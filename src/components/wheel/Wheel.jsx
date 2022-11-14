@@ -13,18 +13,19 @@ function wheel({ pictures }) {
     // si on utilise previewPicture
     if (pictureDisplayed === 0) {
       updatePicture(PicturesNumber - 1)
-      // pictureDisplayed === 0 on modifie  en lui donnant le nombre total -1
+      // on passe de la premier image a la derniere
     } else {
-      // sinon  on prend le nombre pictureDisplayed et on lui enleve -1
-      updatePicture(pictureDisplayed - 1)
+
+      updatePicture(pictureDisplayed - 1)     
+       // sinon  on revien a l'image précedente 
     }
     return updatePicture
   }
   function nextPicture() {
     // si on utilise nextPicture
     if (pictureDisplayed === PicturesNumber - 1) {
+      // on passe de la dernier image a la premiere
       updatePicture((PicturesNumber = 0))
-      // si le nombre total-1 on  revien  a la premiére image
     } else {
       updatePicture(pictureDisplayed + 1)
       // sinon on passe a l'image suivant
