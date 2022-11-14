@@ -1,8 +1,7 @@
 import React from 'react'
 import './Tag.css'
 
-
-const Tags = ({ tags }) => {
+function Tags({ tags }) {
   return (
     <article className="kasa-tags tagLodging">
       {tags.map((tag) => (
@@ -13,6 +12,4 @@ const Tags = ({ tags }) => {
     </article>
   )
 }
-
 export default Tags
-

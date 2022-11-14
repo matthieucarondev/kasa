@@ -1,22 +1,18 @@
-
-.lodgingRating{
-    display: flex;
-       flex-direction: row;
-    align-items: center;
- 
+.lodgingRating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.lodgingRating img{
-    transform: scale(.7);
-    width: 30px;
-    height: 30px;
+.lodgingRating img {
+  transform: scale(0.7);
+  width: 30px;
+  height: 30px;
 }
 @media (max-width: 740px) {
- 
-    .lodgingRating img{
-        transform: scale(.8);
-        width: 15px;
-        height: 15px;
-    }
-
+  .lodgingRating img {
+    transform: scale(0.8);
+    width: 15px;
+    height: 15px;
+  }
 }

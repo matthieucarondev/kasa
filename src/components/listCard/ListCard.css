@@ -1,15 +1,17 @@
-.listCard
- { display: flex;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-    background-color: #f7f7f7;
-    border-radius: 25px;
-    position: relative;
-    margin-left: 10px;
-    margin-right: 10px;
+.listCard {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: #f7f7f7;
+  border-radius: 25px;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-@media  (max-width: 740px) {
-    .listCard{
+@media (max-width: 740px) {
+  .listCard {
     background-color: unset;
-        justify-content: center;
-        padding: 10px;}}
+    justify-content: center;
+    padding: 10px;
+  }
+}

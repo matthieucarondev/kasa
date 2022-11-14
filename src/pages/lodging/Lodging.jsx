@@ -11,41 +11,49 @@ import './Lodging.css'
 
 function Lodging() {
   useEffect(() => {
+    //met a jour le titre du document
     document.title = 'kasa-Location'
   })
+  // utilise l'ID dans l'URL
   const { id } = useParams()
   // le formulaire d'hébergement à partir de la base de données
   const lodgingSearched = datas.find((lodging) => lodging.id === id)
-    
-  const equipments = lodgingSearched.equipments.map(
-    (equipment, index) => {
-      return <li key={index}>{equipment}</li>
-    }
-  )
-  return lodgingSearched? (
-   
-      <section className="kasa-lodging">
-          <article className="lodging-header">
-          <Wheel pictures={lodgingSearched.pictures} />
-          </article> 
-          <article className='lodging-information'>
-          <section className="lodging-location">
-            <h1>{lodgingSearched.title}</h1>
-            <h2>{lodgingSearched.location}</h2>
-            <Tag tags={lodgingSearched.tags} />
-          </section>
-          <article className="hr">
-            <Host host={lodgingSearched.host} />
-							 <Rating rating = {lodgingSearched.rating} />
-          </article>  
-           </article> 
-        <article className="dropdownLodging">
-        <DropDown className="dropdownLodgingTag dropdownLodging-description" title={'Description'} description={lodgingSearched.description} />
-        <DropDown className="dropdownLodgingTag dropdownLodging-Équipements" title={'Équipements'} description={equipments} />
+
+  const equipments = lodgingSearched.equipments.map((equipment, index) => {
+    return <li key={index}>{equipment}</li>
+    // on crée une constance  pour  crée une liste avec les equipment
+  })
+  return lodgingSearched ? (
+    <section className="kasa-lodging">
+      <article className="lodging-header">
+        <Wheel pictures={lodgingSearched.pictures} />
+      </article>
+      <article className="lodging-information">
+        <section className="lodging-location">
+          <h1>{lodgingSearched.title}</h1>
+          <h2>{lodgingSearched.location}</h2>
+          <Tag tags={lodgingSearched.tags} />
+        </section>
+        <article className="hr">
+          <Host host={lodgingSearched.host} />
+          <Rating rating={lodgingSearched.rating} />
         </article>
+      </article>
+      <article className="dropdownLodging">
+        <DropDown
+          className="dropdownLodgingTag dropdownLodging-description"
+          title={'Description'}
+          description={lodgingSearched.description}
+        />
+        <DropDown
+          className="dropdownLodgingTag dropdownLodging-Équipements"
+          title={'Équipements'}
+          description={equipments}
+        />
+      </article>
     </section>
-    ) : (
-       <Error />
+  ) : (
+    <Error /> // renvoie la page d'erreur si aucune correspondance avec l'ID existant
   )
 }
 

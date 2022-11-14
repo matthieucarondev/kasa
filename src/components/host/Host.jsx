@@ -1,8 +1,7 @@
-import React from "react"
+import React from 'react'
 import './Host.css'
 
-
-const Host = ({ host }) => {
+function Host({ host }) {
   return (
     <aside className="host">
       <p className="hostName">{host.name}</p>

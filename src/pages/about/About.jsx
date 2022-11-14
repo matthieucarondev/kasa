@@ -4,12 +4,13 @@ import Banner from '../../components/banner/Banner'
 import './About.css'
 
 function about() {
+  //met a jour le titre du document
   useEffect(() => {
     document.title = 'kasa- À propos'
   })
   return (
     <section>
-      <Banner page="about" />
+      <Banner />
       <article className="about-dropdown">
         <DropDown
           title="Fiabilité"

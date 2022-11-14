@@ -1,5 +1,5 @@
 .header {
-margin:  40px 100px 63px 100px ;
+  margin: 40px 100px 63px 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -11,20 +11,18 @@ header a img {
   height: 68px;
 }
 header nav {
-     display: flex;
- flex-direction: row;
- justify-content: space-between;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 header nav a {
-
   font-size: 24px;
   color: #ff6060;
 }
-#Accueil{
+#Accueil {
   margin-right: 30px;
 }
-#about{
+#about {
   margin-left: 30px;
 }
 
@@ -33,23 +31,23 @@ header nav a:active {
   line-height: 34px;
   border-bottom: 1px solid #ff6060;
 }
-@media(max-width: 740px) {
-    .header {
-margin:  20px 20px 12px 20px ;
-    }
-    header a img {
-        width: 100%;
-      max-width: 145px;
-min-height: 47px;
-    }
-    header nav a {
-  margin-right: 10px;
-  font-size: 12px;
-    }
-    #Accueil{
-  margin-right: 5px;
-}
-#about{
-  margin-left: 5px;
-}
+@media (max-width: 740px) {
+  .header {
+    margin: 20px 20px 12px 20px;
+  }
+  header a img {
+    width: 100%;
+    max-width: 145px;
+    min-height: 47px;
+  }
+  header nav a {
+    margin-right: 10px;
+    font-size: 12px;
+  }
+  #Accueil {
+    margin-right: 5px;
+  }
+  #about {
+    margin-left: 5px;
+  }
 }

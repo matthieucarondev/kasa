@@ -54,28 +54,28 @@
   border-bottom-right-radius: 5px;
   color: #ff6060;
 }
-#dropdown-Description{
+#dropdown-Description {
   margin-right: 38px;
 }
-#dropdown-Équipements{
-  margin-left:38px ;
+#dropdown-Équipements {
+  margin-left: 38px;
 }
-@media(max-width: 740px) {
+@media (max-width: 740px) {
   .dropdown-arrow img {
     width: 15px;
   }
-  .kasa-dropdown{
-      margin-top: 20px;
-      width :100%;
-      min-width: 335px;
+  .kasa-dropdown {
+    margin-top: 20px;
+    width: 100%;
+    min-width: 335px;
   }
-  .dropdown-header{
-  height: 30px;
+  .dropdown-header {
+    height: 30px;
   }
-  .dropdown-title{
+  .dropdown-title {
     font-size: 13px;
   }
   #dropdown-Équipements {
     margin-left: 0px;
-}
+  }
 }
