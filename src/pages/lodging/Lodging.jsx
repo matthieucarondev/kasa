@@ -12,7 +12,7 @@ import './Lodging.css'
 function Lodging() {
   useEffect(() => {
     //met a jour le titre du document
-    document.title = 'kasa-Location'
+    document.title = `kasa-Location-${lodgingSearched.title}`
   })
   // Obtenez le paramètre Id à partir de l'URL.
   const { id } = useParams()

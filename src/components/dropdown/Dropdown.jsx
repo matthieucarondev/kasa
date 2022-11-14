@@ -30,7 +30,7 @@ function DropDown({ title, description }) {
         <div
           className={`dropdown-arrow ${isOpen}`}
           onClick={() => setIsOpen(true)}
-        /* Si le dropdown est à TRUE alors il affichera la description */
+          /* Si le dropdown est à TRUE alors il affichera la description */
         >
           <img src={Arrow} alt="dropdown close" />
         </div>
