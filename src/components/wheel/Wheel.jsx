@@ -5,32 +5,32 @@ import './Wheel.css'
 
 function wheel({ pictures }) {
   /* Crée un Hook d'état */
-  let [pictureDisplayed, updatePicture] = useState(0) //useState, représente la valeur de base, 0
+  let [pictureDisplayed, setPictureDisplayed ] = useState(0) //useState, représente la valeur de base, 0
   //updatePicture, est la fonction que l'on appelle et qui modifie cette valeur
   let PicturesNumber = pictures.length
   // on recupére le nombre image total
   function previewPicture() {
     // si on utilise previewPicture
     if (pictureDisplayed === 0) {
-      updatePicture(PicturesNumber - 1)
+     setPictureDisplayed(PicturesNumber - 1)
       // on passe de la premier image a la derniere
     } else {
 
-      updatePicture(pictureDisplayed - 1)     
+      setPictureDisplayed(pictureDisplayed - 1)     
        // sinon  on revien a l'image précedente 
     }
-    return updatePicture
+   
   }
   function nextPicture() {
     // si on utilise nextPicture
     if (pictureDisplayed === PicturesNumber - 1) {
       // on passe de la dernier image a la premiere
-      updatePicture((PicturesNumber = 0))
+      setPictureDisplayed((PicturesNumber = 0))
     } else {
-      updatePicture(pictureDisplayed + 1)
+      setPictureDisplayed(pictureDisplayed + 1)
       // sinon on passe a l'image suivant
     }
-    return updatePicture
+    
   }
   return (
     <section className="kasa-wheel">
@@ -53,7 +53,7 @@ function wheel({ pictures }) {
         </article>
       )}
       {pictures.map((picture, index) =>
-        //crée un tableau avec les image
+        // parcourt mon tableau avec les image
         index === pictureDisplayed ? (
           //si index strictement egal pictureDisplayed on affiche ceci
           <article>

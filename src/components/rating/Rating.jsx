@@ -3,11 +3,9 @@ import GreyStar from '../../asset/star.png'
 import RedStar from '../../asset/fullStar.png'
 import './Rating.css'
 
-function Rating(datas) {
-  // on recupére le nombre dans le tableau
-  let lodgingRating = datas.rating
+function Rating({ rating }) {
   // on soustrait le nombre du tableau  moin 5
-  let lodgingNegRating = 5 - lodgingRating
+  const lodgingNegRating = 5 - rating
   function greyStars() {
     // on affiche le nombre d'étoile gris
     let greyStarsArray = []
@@ -16,7 +14,7 @@ function Rating(datas) {
         <img
           src={GreyStar}
           key={`Étoile grisée n°${i}`}
-          alt={`Rating is ${lodgingRating}/5`}
+          alt={`Rating is ${rating}/5`}
         />
       )
     }
@@ -25,12 +23,12 @@ function Rating(datas) {
   function redStars() {
     // on affiche le nombre d'étoile rouge
     let redStarsArray = []
-    for (let j = 0; j < lodgingRating; j++) {
+    for (let j = 0; j < rating; j++) {
       redStarsArray.push(
         <img
           src={RedStar}
           key={`Étoile rouge n°${j}`}
-          alt={`Rating is ${lodgingRating}/5`}
+          alt={`Rating is ${rating}/5`}
         />
       )
     }
