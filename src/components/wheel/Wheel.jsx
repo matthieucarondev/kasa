@@ -33,6 +33,7 @@ function wheel({ pictures }) {
   }
   return (
     <section className="kasa-wheel">
+      {/* si il y a plus  de une photo on affiche les fléche  */}
       {PicturesNumber > 1 && (
         <article className="kasaArrow">
           <img

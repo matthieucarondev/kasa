@@ -14,7 +14,7 @@ function Lodging() {
     //met a jour le titre du document
     document.title = 'kasa-Location'
   })
-  // utilise l'ID dans l'URL
+  // Obtenez le paramètre Id à partir de l'URL.
   const { id } = useParams()
   // le formulaire d'hébergement à partir de la base de données
   const lodgingSearched = datas.find((lodging) => lodging.id === id)
