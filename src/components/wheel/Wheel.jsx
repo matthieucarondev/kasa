@@ -56,7 +56,7 @@ function wheel({ pictures }) {
         // parcourt mon tableau avec les image
         index === pictureDisplayed ? (
           //si index strictement egal pictureDisplayed on affiche ceci
-          <article>
+               <article key={index}>
             <img
               key={index}
               className="wheel-image displayed"
