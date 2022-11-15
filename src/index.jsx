@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/home/Home'
 import Header from './components/header/Header'
@@ -8,9 +9,7 @@ import Lodging from './pages/lodging/Lodging'
 import Footer from './components/footer/Footer'
 import './Index.css'
 
-function index() {
-  
-return(
+ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Header />
@@ -22,8 +21,6 @@ return(
       </Routes>
       <Footer />
     </BrowserRouter>
-  </React.StrictMode>
-
+  </React.StrictMode>,
+  document.getElementById('root')
 )
-}
-export default index
