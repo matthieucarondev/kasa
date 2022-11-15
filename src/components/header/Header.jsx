@@ -5,11 +5,8 @@ import './Header.css'
 
 function header() {
   return (
-    <header className="header">
-      {/* logo  et un lien pour retourner a l'accueil */}
-      <Link id="logo" to="/">
+    <header className="header"> 
         <img src={logo} className="logo" alt="logo kasa" />
-      </Link>
       <nav>
         {/* crée le lien de la page d'accueil */}
         <Link id="Accueil" to="/">
