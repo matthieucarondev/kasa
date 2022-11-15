@@ -9,7 +9,7 @@ function header() {
       {/* logo  et un lien pour retourner a l'accueil */}
       <Link id="logo" to="/">
         <img src={logo} className="logo" alt="logo kasa" />
-    </Link>
+      </Link>
       <nav>
         {/* crée le lien de la page d'accueil */}
         <Link id="Accueil" to="/">
