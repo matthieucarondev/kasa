@@ -10,8 +10,10 @@ import './Lodging.css'
 
 function Lodging() {
   const { id } = useParams()
+  // hook est un hook React Router 
+// qui permet d'accéder aux paramètres de l'URL courante. 
   const navigate = useNavigate()
-
+// renvoie une fonction qui permet de naviguer par programmation
   const [lodgingSearched, setLodgingSearched] = useState(null)
   const [equipments, setEquipments] = useState([])
 

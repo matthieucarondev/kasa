@@ -1,12 +1,25 @@
+.About{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 .about-dropdown {
-  padding: 0 208px;
-  margin-bottom: 201px;
-  display: flex;
-  flex-direction: column;
+    margin-bottom: 201px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 74%;
 }
 @media (max-width: 740px) {
   .about-dropdown {
     padding: 19px 20px;
     margin-bottom: 168px;
   }
+  .About{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 }

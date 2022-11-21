@@ -9,7 +9,7 @@ function about() {
     document.title = 'kasa- À propos'
   })
   return (
-    <section>
+    <section className='About'>
       <Banner />
       <article className="about-dropdown">
         <DropDown
