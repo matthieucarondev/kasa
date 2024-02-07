@@ -3,7 +3,7 @@ import ArrowLeft from '../../asset/ArrowLeft.png'
 import ArrowRight from '../../asset/ArrowRight.png'
 import './Wheel.css'
 
-function wheel({ pictures }) {
+function Wheel({ pictures }) {
   /* Crée un Hook d'état */
   let [pictureDisplayed, setPictureDisplayed ] = useState(0) //useState, représente la valeur de base, 0
   //updatePicture, est la fonction que l'on appelle et qui modifie cette valeur
@@ -82,4 +82,4 @@ function wheel({ pictures }) {
   )
 }
 
-export default wheel
+export default Wheel

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Error from '../../components/error/Error'
 
-function error() {
+function ErrorPage() {
   useEffect(() => {
     document.title = 'kasa-erreur404'
   })
@@ -12,4 +12,4 @@ function error() {
   )
 }
 
-export default error
+export default ErrorPage

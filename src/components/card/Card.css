@@ -13,6 +13,9 @@
   background: #ff6060;
   width: 335px;
 }
+.cardImg:hover{
+  box-shadow: 3px 3px 3px rgb(76, 76, 76);
+}
 .cardText {
   position: absolute;
   left: 5.88%;
