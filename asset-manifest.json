@@ -1,16 +1,16 @@
 {
-  "main.css": "/kasa/static/css/main.3b0926c0.chunk.css",
-  "main.js": "/kasa/static/js/main.6992d835.chunk.js",
-  "main.js.map": "/kasa/static/js/main.6992d835.chunk.js.map",
-  "runtime~main.js": "/kasa/static/js/runtime~main.96e85a30.js",
-  "runtime~main.js.map": "/kasa/static/js/runtime~main.96e85a30.js.map",
-  "static/js/2.3873fc6b.chunk.js": "/kasa/static/js/2.3873fc6b.chunk.js",
-  "static/js/2.3873fc6b.chunk.js.map": "/kasa/static/js/2.3873fc6b.chunk.js.map",
-  "index.html": "/kasa/index.html",
-  "precache-manifest.71baed687795d1a63b66e8bcca3d410c.js": "/kasa/precache-manifest.71baed687795d1a63b66e8bcca3d410c.js",
-  "service-worker.js": "/kasa/service-worker.js",
-  "static/css/main.3b0926c0.chunk.css.map": "/kasa/static/css/main.3b0926c0.chunk.css.map",
-  "static/media/about.png": "/kasa/static/media/about.6b63b591.png",
-  "static/media/imgBanner.jpg": "/kasa/static/media/imgBanner.25c1808e.jpg",
-  "static/media/logo.svg": "/kasa/static/media/logo.c2ee4f23.svg"
+  "files": {
+    "main.css": "/kasa/static/css/main.9709b10a.css",
+    "main.js": "/kasa/static/js/main.b324086e.js",
+    "static/media/imgBanner.jpg": "/kasa/static/media/imgBanner.b37df1a62aeac2abe58d.jpg",
+    "static/media/about.png": "/kasa/static/media/about.fce6fc3e9ed27433e9b0.png",
+    "static/media/logo.svg": "/kasa/static/media/logo.ec0e3ac550e44a880f5cbba722c25351.svg",
+    "index.html": "/kasa/index.html",
+    "main.9709b10a.css.map": "/kasa/static/css/main.9709b10a.css.map",
+    "main.b324086e.js.map": "/kasa/static/js/main.b324086e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9709b10a.css",
+    "static/js/main.b324086e.js"
+  ]
 }
