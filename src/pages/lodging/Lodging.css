@@ -76,6 +76,7 @@ h2 {
     align-items: flex-start;
   }
   .tagLodging {
-    margin: 0%;
+    margin: 5px;
+    margin-bottom: 21px;
   }
 }
