@@ -27,4 +27,7 @@
     margin: 0;
     margin-right: 10px;
   }
+  .tag:hover{
+    box-shadow: 2px 2px 2px rgb(76, 76, 76);
+  }
 }

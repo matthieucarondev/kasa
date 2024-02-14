@@ -34,7 +34,7 @@ function Lodging() {
     } else {
       navigate('/Error')
     }
-  }, [lodgingSearched])
+  }, [id, navigate])
 
   return (
     <>
