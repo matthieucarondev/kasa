@@ -19,4 +19,8 @@
   .Reserved {
     font-size: 12px;
   }
+  .footer {
+    position: relative;
+    bottom: -127px;
+  }
 }
